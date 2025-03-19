@@ -1,18 +1,19 @@
 body {
-  font-family: monospace, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif, monospace;
   max-width: 800px;
   margin: 0 auto;
+  font-size: 24px;
   padding: 20px;
-  background-color: darkslategrey;
-  color: lightblue;
+  background-color: white;
+  color: black;
 }
 
 a {
-  color: lightblue;
+  color: blue;
 }
 
 button {
-  background-color: lightcyan;
+  background-color: orange;
   border: none;
   padding: 4px;
   border-radius: 4px;
