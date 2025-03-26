@@ -1,33 +1,116 @@
 body {
-  font-family: Roboto, Arial, sans-serif, monospace;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 24px;
+  font-family: 'Fira Sans', Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  font-size: 18px;
   padding: 20px;
-  background-color: white;
-  color: black;
+  background-color: #181818;
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 a {
-  color: blue;
-}
-
-button {
-  background-color: orange;
-  border: none;
-  padding: 4px;
-  border-radius: 4px;
-  transition:cubic-bezier(1, 0, 0, 1);
-  transition-duration: 400ms;
-}
-
-button a {
-  color: black;
+  color: #80cbc4;
   text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 30px 0;
+}
+
+small {
+  color: #999;
+  font-size: 14px;
+}
+
+blockquote {
+  background: #252525;
+  padding: 10px;
+  border-left: 5px solid #80cbc4;
+  font-style: italic;
+  color: #bbb;
+  margin: 15px 0;
+}
+
+/* Button for 'Go Back to Home Page' */
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background: #80cbc4;
+  color: #181818;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
 button:hover {
+  background: #66a69c;
+}
+
+button a {
+  color: #181818;
+  text-decoration: none;
+}
+
+button a:hover {
+  text-decoration: none;
+}
+pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: 'Fira Code', monospace;
   font-size: 16px;
-  transition:cubic-bezier(1, 0, 0, 1);
-  transition-duration: 400ms;
+  overflow-x: auto;
+  line-height: 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #777;
 }
