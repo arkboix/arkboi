@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Switching to sway | arkboi</title>
+</head>
+<body>
+    <button> <a href="../index.html"> Go Back to home page </a></button>
+    <h1>Switching to Sway</h1>
+    <br>
+<p>
+    You heard me. I have officially switched to SwayWM from Hyprland.
+
+    I'll tell why in just a moment, but first let's just go through my "Sway Journey"
+<br>
+<br>
+    Installing it was simple, just install sway?! And then you remove hyprland which in turn removes xwayland alongside it, so might want to install xwayland again.
+<br>
+<br>
+
+    Configuring Sway is not hard, it has a simple configuration similar to that of i3, which is to be expected, since it is specifically i3 compatible. I just used what I always used, waybar, rofi etc, as well as a colorscheme i've never tried out, everforest, it's nice!
+    <br>
+    <br>
+    <b>What I think, is the philosophy of Sway</b>
+    <br>
+    <br>
+    SwayWM, despite being a "Wayland Compositor" does not have any eye candy, I love this. I know there are projects like swayFX but the whole point of sway, to me atleast is that it is incredibly, not distracting!
+    <br>
+    Just think about it, animations make everything slower, rounded corners waste battery life (who cares but I thought i'd mention it, still not a fan of rounded corners), and blur is just.. eye candy, nothing else.
+    <br>
+    The philosophy of a window manager itself is to be faster than a desktop environment and get your things done without touching the mouse. i3 is a perfect example of a window manager, it has no bloat, it's just fast, get's my stuff done and that's it. When back then, i used i3, I did have blur, shadows, rounded corners, etc, with the reason being it's pretty cool to see all of that in a X11 window manager, where you have to get <pre> picom</pre> and configure it, i will never get this feeling with hyprland.
+    <br>
+    <br>
+    <b>Reasons for me to switch to sway</b>
+    <br>
+    <br>
+    <ul>
+        <li>It is simply more minimal</li>
+        <li>I'd like a wlroots WM</li>
+        <li>It is, somehow, easier to configure</li>
+        <li>THIS (sway) is what i've always tried to get in Hyprland, but then forced to enable a lot of the eyecandy, cause if they are there, I wanna use em, If not, good for me.</li>
+        <li>I thought i'd try something new</li>
+        <li><a href="https://rentry.co/Hyprland-controversy">https://rentry.co/Hyprland-controversy</a></li>
+    </ul>
+    <br>
+    <br>
+    <b>Problems with Sway</b>
+    <br>
+    <br>
+    It ain't all sunshine and rainbows of course, the number one problem I had with sway was OBS and screen sharing.
+    <br>
+    unlike hyprland, just installing these packages won't work:
+    <pre>xdg-desktop-portal xdg-desktop-portal-wlr*</pre>
+    <small>*Note, xdg-desktop-portal-wlr as the name suggests, is for wlroots WMs, hyprland uses xdg-desktop-portal-hyprland</small>
+    <br>
+    <br>
+    The one additional step is just adding these commands to autostart like so,
+    <br>
+    <br>
+    <small>In ~/.config/sway/config:</small>
+    <pre>exec --no-startup-id /usr/lib/xdg-desktop-portal
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
+        </pre>
+    <br>
+    <br>
+    And there's that. No other problems i face with sway, the ones i did face i fixed.
+    <br>
+    <br>
+    <b>Conclusion</b>
+    <br>
+    <br>
+    Sway is just better than Hyprland for me, I do not want to get into a lot of the drama with hyprland, and originally this was a rage decision after getting a banned from the hyprland discord and then "Going back after a day or so", but it's discord who cares.
+</p>
+  </body>
+</html>
